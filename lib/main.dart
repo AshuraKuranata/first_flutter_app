@@ -1,8 +1,5 @@
-import 'dart:ffi';
-
 import 'package:english_words/english_words.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
 
 // The acutal code that calls the app to activate
@@ -291,7 +288,7 @@ class BigCard extends StatelessWidget {
       child: Padding(
         padding: const EdgeInsets.all(20.0), // EdgeInsets.all(##.##) adds in the sizing around 
         child: Text(
-          "${firstWord} ${secondWord}",
+          "$firstWord $secondWord",
           style: style,
           semanticsLabel: "${pair.first} ${pair.second}",
           ), // Adding the style as style
